@@ -1,3 +1,10 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  #pageルーティング
+    get 'pages/index'
+    root 'pages#index'
+  #userルーティング
+    resources :users
+    
+
+  
 end

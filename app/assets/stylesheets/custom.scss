@@ -1,0 +1,32 @@
+.top-page-wrapper{
+  background-color:#EBFD0F;
+  width:100vw;
+  height:100vh;
+}
+
+.top-page-container h1{
+  color:#707070;
+  font-size:115px;
+  font-family:'Hiragino Kaku Gothic Std';
+  margin-top:70px;
+}
+
+.btn-white{
+  border: 4px solid #707070;
+  color:#707070;
+  font-family:'Hiragino Kaku Gothic Std';
+  padding-top:15px;
+  padding-bottom:15px;
+  margin-top:55px;
+  font-size:30px;
+  
+  &:hover{
+    color:#fff;
+  }
+}
+
+.users-new-wrapper{
+  font-family:'Hiragino Kaku Gothic Std';
+  background-color:#EBFD0F;
+  height:100%;
+}
