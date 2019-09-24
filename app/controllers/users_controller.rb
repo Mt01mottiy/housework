@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to homes_new_path
+      redirect_to calendars_index_path
     else
       flash.now[:danger] = "登録に失敗しました"
       render :new

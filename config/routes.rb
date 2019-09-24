@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'calendars/index'
   get 'homes/new'
   get 'sessions/new'
   #pageルーティング
@@ -10,6 +11,6 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to:'sessions#destroy'
-  #homeページ
-  resources :homes
+  #calendarページ
+  resources :calendars
 end
