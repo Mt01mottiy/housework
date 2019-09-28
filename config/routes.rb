@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'works/new'
   get 'calendars/index'
   get 'homes/new'
   get 'sessions/new'
