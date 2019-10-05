@@ -12,5 +12,20 @@
 //
 //= require rails-ujs
 //= require activestorage
+//= require jquery
 //= require turbolinks
+//= require moment 
+//= require fullcalendar
+//= require fullcalendar/locale-all
 //= require_tree .
+
+function showCalendar() {
+  return $('#calendar').fullCalendar();
+};
+$(document).on('turbolinks:load', showCalendar);
+
+function clearCalendar() {
+  $('#calendar').fullCalendar('delete');
+  $('#calendar').html('');
+};
+$(document).on('turbolinks:before-cache', clearCalendar);
