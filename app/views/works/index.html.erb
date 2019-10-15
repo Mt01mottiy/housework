@@ -1,0 +1,26 @@
+<div class = "list-wrapper">
+  <div class = "container">
+    <div class = "row">
+        <h1 class = "font-dsg title">今日やる家事</h1>
+            <%= link_to "作成する", new_work_path, class: "btn-shadow"  %>
+  
+        <table>
+        <head>
+            <tr class = "font-dsg large">
+              <th>Limit</th>
+              <th>Task</th>
+            </tr>
+        </head>
+        <body>
+            <% @tasks.each do |t| %>
+            <tr class = "font-dsg small">
+            <td><%= t.limit_date%></td>
+            <td><%= t.task%></td>
+              <td><%= link_to "削除", work_path(:id => t.id), method: :delete %></td>
+            </tr>
+            <% end %>
+        </body>
+        </table>
+    </div>
+  </div>
+</div>

@@ -45,4 +45,76 @@
   width:100%;
   z-index:10000;
 }
+table{
+  margin-left:50px;
+}
 
+table th{
+  padding:10px;
+}
+table td{
+  padding:10px;
+}
+.font-dsg{
+  font-family:'Hiragino Kaku Gothic Std';
+}
+.title{
+  margin-left:50px;
+}
+.large{
+  font-size:30px;
+}
+.small{
+  font-size:20px;
+}
+
+.input-group-text{
+  display: flex;
+}
+.list-wrapper{
+  background-color:#EBFD0F;
+  width:100vw;
+  height:100vh;
+}
+.btn-shadow{
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #FFCC33;/*ボタン色*/
+  color: black;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  margin-left:100px;
+}
+.btn-shadow:active{
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+  border-bottom: none;
+}
+.list-create-wrapper{
+  background-color:#EBFD0F;
+  width:100vw;
+  height:100vh;
+}
+.btn-type2{
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #FFCC33;/*ボタン色*/
+  color: black;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.btn-type2:active{
+   -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+  border-bottom: none;
+}
+.alert {
+  margin-bottom: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}

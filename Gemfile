@@ -45,8 +45,7 @@ group :development, :test do
   gem 'pry-doc'
   gem 'pry-byebug'
   gem 'pry-stack_explorer'
-  
-  
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -73,3 +72,5 @@ gem 'bcrypt'
 gem 'bootstrap-sass'
 gem 'momentjs-rails'
 gem 'fullcalendar-rails'
+gem "bootstrap4-datetime-picker-rails"
+gem "font-awesome-rails"

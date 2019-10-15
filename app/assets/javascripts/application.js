@@ -17,15 +17,5 @@
 //= require moment 
 //= require fullcalendar
 //= require fullcalendar/locale-all
+//= require tempusdominus-bootstrap-4.js
 //= require_tree .
-
-function showCalendar() {
-  return $('#calendar').fullCalendar();
-};
-$(document).on('turbolinks:load', showCalendar);
-
-function clearCalendar() {
-  $('#calendar').fullCalendar('delete');
-  $('#calendar').html('');
-};
-$(document).on('turbolinks:before-cache', clearCalendar);

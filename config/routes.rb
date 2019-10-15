@@ -12,6 +12,6 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to:'sessions#destroy'
-  #calendarページ
-  resources :calendars
+ #work
+  resources :works
 end
