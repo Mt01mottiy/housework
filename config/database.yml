@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: housework_production
-  username: housework
-  password: <%= ENV['HOUSEWORK_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
