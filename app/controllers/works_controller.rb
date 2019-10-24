@@ -26,7 +26,7 @@ class WorksController < ApplicationController
  end
  
  def destroy
-  @task = Workdetail.find_by(params[:id])
+  @task = Workdetail.find_by(id: params[:id])
     if @task.destroy
      redirect_to works_path
     else
